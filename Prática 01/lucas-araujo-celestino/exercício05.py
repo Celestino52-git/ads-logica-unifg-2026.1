@@ -1,0 +1,6 @@
+tamanho_mb = float(input("digite o tamanho do arquivo (Mb): "))
+velocidade_mbps = float(input("digite a velocidade da internet"))
+tempo_segundos = tamanho_mb / (velocidade_mbps / 8) 
+minutos = int(tempo_segundos // 60)
+segundos_restantes = int(tempo_segundos % 60)
+print(f"O tempo estimado de download é de {minutos} minutos e {segundos_restantes} segundos.")
